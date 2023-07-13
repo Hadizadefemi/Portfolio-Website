@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    <title>Projects | HADIZ ADEFEMI</title>
+{% endblock title %}
+    
+{% block content %}
+<h1 class="text-center display-2 mb-4 fw-normal" style="color: #495E57;"">PROJECTS</h1>
+<div class="row">
+    
+    {% for project in projects %}
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <img class="card-img-top" src="{{project.image.url}}">
+            <div class="card-body">
+                <h5 class="card-title">{{ project.title }}</h5>
+                <p class="card-text">{{ project.description }}</p>
+                <a href="{% url 'project_detail' project.pk %}"
+                   class="btn btn-sm btn-outline-secondary me-2">
+                    Read More...
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock%}
