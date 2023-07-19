@@ -1,19 +1,63 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div id="bio" class="col-12 col-lg-6 text-center">
-            <h1>Hadiz</h1>
-            <img src="{% static 'imsg/hadiz_adefemi.jpg' %}" class="img-fluid">
+
+
+    <section class="bg-secondary-subtl row mt-2 mb-5">
+        <h1 class="text-center display-3 mb-4">Hadiz Adefemi</h1>
+        <div id="bio" class="col-12 col-lg-6 d-flex align-items-center justify-content-center mb-3">    
+            <img src="https://fakeimg.pl/300x300" alt="Hadiz picture" loading="lazy" class="rounded border border-info shadow-sm img-fluid">
         </div>
-        <div id="more" class="col-12 col-lg-6">
-            <h2>Hi!</h2>
-            
+        <div id="more" class="col-12 col-lg-6 d-flex align-items-center justify-content-center">
+            <div>
+                <h2 class="text-center fs-4 mb-3"><strong>Hi</strong> &mdash;</h2>
+                <p class="lead text-center">
+                    I'm <strong>Hadiz</strong>, an aspiring<br>
+                    <span class="text-primary-emphasis">Software Engineer</span> on a <br>
+                    mission to build impactful<br>
+                    solutions through tech. &#128161; &#128640;<br>
+                </p>
+            </div>
         </div>
-        <div class="text-center">
-            <a href="" class="btn btn-outline-secondary">About Me</a>
+        <div class="text-center my-3">
+            <a href="#about" class="btn btn-lg btn-primary">About Me</a>
         </div>
-    </div>
-</div>
+    </section>
+
+    <div id="about" class="lead p-4 container bg-secondary-subtle">
+        <h2 class="text-center display-3 mb-4 text-primary">About Me</h2>
+        <section>
+          <h3>Introduction &#10024;</h3>
+          <p>Hi! I'm <strong>Hadiz Adefemi</strong>, an aspiring software engineer on a relentless quest to harness the power of technology in solving complex problems. With an insatiable curiosity and a burning passion for all things tech, I embark on a journey of continuous learning and innovation.</p>
+        </section>
+      
+        <section>
+          <h3>Projects and Growth &#128200;</h3>
+          <p>Fueling my growth as a budding engineer, I have undertaken diverse <a href="{% url 'project_index' %}">projects</a> that has helped me developed my skills. From crafting dynamic web applications to delving into the realm of cloud computing, each project has offered invaluable opportunities for me to expand my knowledge and expertise. These practical endeavors have further strengthened my problem-solving abilities and taught me the art of transforming ideas into tangible software solutions.</p>
+        </section>
+      
+        <section>
+          <h3>Passion for Tech and Problem-Solving &#128640;</h3>
+          <p>At the core of my being lies an unwavering passion for technology and its potential to shape the world. The ever-evolving nature of the tech industry excites me, as it presents infinite possibilities for innovation and transformation. I am driven by the thrill of dissecting complex problems and leveraging my skills to create elegant and impactful solutions.</p>
+        </section>
+      
+        <section>
+          <h3>Collaboration and Communication &#129309;</h3>
+          <p>While I treasure solitary moments of coding contemplation, I am also an ardent advocate for collaboration and teamwork. Recognizing the power of collective intelligence, I actively seek opportunities to work alongside talented individuals who share my drive and enthusiasm. I thrive in dynamic environments where ideas flow freely, and diverse perspectives converge to create something truly extraordinary.</p>
+        </section>
+      
+        <section>
+          <h3>Future Goals &#127919;</h3>
+          <p>As I continue my journey as a software engineer, my sights are set on contributing to groundbreaking projects that push the boundaries of technological advancement. From creating innovative applications that improve lives to participating in the development of cutting-edge software solutions, I aspire to leave an indelible mark on the digital landscape. With an unyielding commitment to excellence, I aim to constantly challenge myself, embrace emerging technologies, and make a positive impact through my work.</p>
+        </section>
+      
+        <section>
+          <h3>Connect and Collaborate &#128104;</h3>
+          <p>I am always eager to connect with fellow tech enthusiasts, industry professionals, and potential collaborators. Feel free to reach out to me at <a href="mailto:adefemihadizi2020@gmail.com">adefemihadizi2020@gmail.com</a> to discuss exciting opportunities, share knowledge, or simply engage in inspiring conversations. Together, we can unravel the infinite possibilities that lie within the realm of technology.</p>
+        </section>
+      </div>
+      
+
+
+
 {% endblock %}
