@@ -12,7 +12,7 @@
                 <div class="navbar-nav">
                     <a href="{% url 'homepage' %}" class="nav-item nav-link active mx-1" id="underline "><i class="fas fa-home"></i></a>
                     <a href="{% url 'project_index' %}" class="nav-item nav-link active mx-1 underline {% if request.path|slice:'0:9' == '/projects' %}active-link{% endif %}">Projects</a>
-                    <a href="#" class="nav-item nav-link active mx-1 underline {% if request.path == '/blogs' %}active-link{% endif %}">Blogs</a>
+                    <a href="{% url 'blog_index' %}" class="nav-item nav-link active mx-1 underline {% if request.path|slice:'0:6' == '/blog/' %}active-link{% endif %}">Blog</a>
                 </div>
     
                 <div class="navbar-nav ms-auto">

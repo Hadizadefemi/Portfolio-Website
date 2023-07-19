@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>404 Page not found | HADIZ ADEFEMI</title>
+{% endblock title %}
+
+
+{% block content %}
+<div class="d-flex align-items-center justify-content-center mt-5">
+    <div class="container text-center">
+        <h1 class="display-4">Oops!</h1>
+        <p class="lead">The page you're looking for is not found.</p>
+        <a href="{% url 'homepage' %}" class="btn btn-primary btn-lg">Go to Homepage</a>
+    </div>
+</div>
+{% endblock %}

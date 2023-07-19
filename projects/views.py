@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Project
 
 # Create your views here.
@@ -13,9 +13,12 @@ def project_index(request):
     return render(request, 'projects/project_index.html', context)
 
 def project_detail(request, pk):
-    project = Project.objects.get(pk=pk)
+    project = get_object_or_404(Project, pk=pk)
     context = {
         'project': project
     }
     
     return render(request, 'projects/project_detail.html', context)
+
+def custom_404(request, exception):
+    return render(request, "404.html", status=404)

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="col-md-8 offset-md-2">
+    <h1 class="text-center display-2 mb-4 fw-normal">Blog</h1>
+    <hr>
+    {% for post in posts %}
+    <h2><a href="{% url 'blog_detail' post.pk %}">{{ post.title }}</a></h2>
+    <small>
+        {{ post.created_on.date }}
+    </small>
+    <p>{{ post.body | slice:':300' }}...</p>
+    {% endfor %}
+
+</div>
+{% endblock %}
