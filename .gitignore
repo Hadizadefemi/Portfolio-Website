@@ -7,6 +7,7 @@ __pycache__/
 *$py.class
 
 # Database
+*.sqlite3
 
 # Text backup files
 *.bak
