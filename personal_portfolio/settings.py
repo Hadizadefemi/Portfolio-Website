@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-b-i19a!k+^4dvuz3+73=2_sp)l#_1t$&)d^z%xv_m8=p&_l@0!')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # Set hosts to allow any app on Railway and the local testing URL
 ALLOWED_HOSTS = ['.railway.app','127.0.0.1']
