@@ -1,0 +1,69 @@
+/* Body */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100%;
+}
+
+main div.container .row {
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
+main h1 {
+    color: #1594de;
+    text-shadow: 2px 2px 1px rgba(8, 11, 10, 0.2);
+}
+
+/* Header */
+header nav.navbar, footer{
+    background-color: #e1eaeb;
+}
+
+header .navbar .container-fluid #navbarCollapse .ms-auto a {
+    font-size: 22px;
+}
+
+#logo {
+    font-family: Chela One, Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: #1594de;
+    text-shadow: 2px 2px 1px rgba(141, 14, 14, 0.2);
+}
+
+.navbar div div.collapse .navbar-nav .active:hover {
+    color: #1188f8;
+}
+
+.navbar div div.collapse .navbar-nav .active {
+    color: rgb(56, 80, 88);
+}
+
+a.underline:active {
+    text-decoration: underline;
+}
+
+/*  Body */
+footer .container a {
+    font-size: 25px;
+    color: #49585e;
+}
+
+footer .container a:hover {
+    color: #1188f8;
+}
+
+.active-link {
+    text-decoration: underline;
+    text-decoration-color: #1188f8;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+}
