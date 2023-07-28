@@ -8,6 +8,12 @@
     <meta name="author" content="Hadiz Adefemi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <meta itemprop="name" content="HADIZ ADEFEMI"/>
+    <meta name="keywords" content="Hadiz Adefemi, portfolio, web development, projects, achievements, software engineer">
+
+    {% block meta_img %}
+    <meta property="og:image" content="{% static 'img/Hadiz.jpeg' %}">
+    <meta name="twitter:image" content="{% static 'img/Hadiz.jpeg' %}">
+    {% endblock %}
     
     {% block meta %}
     <link rel="canonical" href="https://hadizadefemi.up.railway.app"/>
@@ -16,11 +22,9 @@
     <meta property="og:description" content="I'm Hadiz, an aspiring Software Engineer on a mission to build impactful solutions through tech. 💡 🚀">
     <meta property="og:url" content="https://hadizadefemi.up.railway.app">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="{% static 'img/Hadiz.jpeg' %}">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Hadiz Adefemi">
     <meta name="twitter:description" content="I'm Hadiz, an aspiring Software Engineer on a mission to build impactful solutions through tech. 💡 🚀">
-    <meta name="twitter:image" content="{% static 'img/Hadiz.jpeg' %}">
     {% endblock %}
 
     {% block title %}
