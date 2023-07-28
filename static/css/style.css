@@ -61,6 +61,12 @@ footer .container a:hover {
     color: #1188f8;
 }
 
+main div.container section div.links-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .active-link {
     text-decoration: underline;
     text-decoration-color: #1188f8;
